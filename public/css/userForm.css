@@ -1,0 +1,128 @@
+@font-face {
+    font-family: 'Futura';
+    src: local('Futura'), url('../font/futura_medium_bt.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'FuturaCondensed';
+    src: local('Futura'), url('../font/futura_medium_condensed_bt.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@media only screen and (min-width: 1090px) {
+    .userForm {
+        float: left;
+    }
+}
+
+@media only screen and (max-width: 1090px) {
+    .gMap {
+        margin: 5px auto;
+    }
+}
+
+h2, button {
+    font-family: 'Futura', sans-serif;
+}
+
+body {
+    background-color: #5D5E60;
+}
+
+h2 {
+    text-align: center;
+    color: #FFFFFF;
+    background-color: #44AEE8;
+    padding: 8px;
+    margin: 0 0 25px 0;
+    font-weight: 100;
+}
+
+.userForm {
+    background-color: #FFFFFF;
+    height: 475px;
+    width: 375px;
+    margin: 5px auto;
+}
+
+.userForm fieldset {
+    border: none;
+    padding: 0 23px;
+}
+.userForm div {
+    margin: 6px 0;
+}
+
+input, button {
+    border: none;
+    border-radius: 5px;
+}
+
+input {
+    font-family: 'FuturaCondensed', sans-serif;
+    padding: 13px 10px 10px;
+    box-sizing: border-box;
+    width: 100%;
+    background-color: #E7EAED;
+}
+
+label {
+    font-family: 'FuturaCondensed', sans-serif;
+    color: #FFFFFF;
+}
+
+.labelError {
+    color: #FF0632;
+}
+
+input::placeholder {
+    color: #ADB5BC;
+    font-size: 20px;
+}
+
+input.validationError {
+    background-color: #FF677E;
+}
+
+input.validationError::placeholder {
+    color: #FFFFFF;
+}
+
+.firstName, .lastName {
+    width: 45%;
+    float: left;
+}
+
+div.lastName {
+    margin-left: 32px;
+}
+
+div.country {
+    margin-bottom: 25px;
+}
+
+button {
+    padding: 13px;
+    background-color: #44AEE8;
+    color: #FFFFFF;
+    width: 100%;
+    margin: 25px 0 25px;
+    font-size: 20px;
+}
+
+.gMap {
+    height: 475px;
+    width: 675px;
+}
+
+.table, tr, th {
+    border: 1px solid #FFFFFF;
+    color: #FFFFFF;
+}
+
+th {
+    padding: 5px;
+}

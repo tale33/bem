@@ -1,0 +1,17 @@
+CREATE TABLE settings (
+    ID INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+    apiKey VARCHAR(50)
+) ENGINE=INNODB;
+
+INSERT INTO settings(apiKey) VALUE ('');
+
+CREATE TABLE users (
+    ID INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+    firstName VARCHAR(50),
+    lastName VARCHAR(50),
+    street VARCHAR(50),
+    city VARCHAR(50),
+    country VARCHAR(50),
+    latitude DECIMAL(18, 9) DEFAULT 0,
+    longitude DECIMAL(18, 9) DEFAULT 0
+) ENGINE=INNODB;
